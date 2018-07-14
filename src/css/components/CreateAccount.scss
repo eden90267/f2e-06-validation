@@ -1,0 +1,61 @@
+.createAccount {
+
+  .form-group {
+    position: relative;
+  }
+
+  label {
+    font-size: 20px;
+  }
+  input {
+    font-size: 20px;
+    height: 52px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+  }
+  button[type=submit] {
+    padding: 14px 0;
+    font-size: 20px;
+    border: 2px solid #4A90E2;
+    border-radius: 8px;
+  }
+
+  .was-validated {
+    input {
+      border-color: #F5A623 !important;
+    }
+    .invalid-feedback {
+      position: absolute;
+      top: 45px;
+      transform: translateX(470px);
+      background: #F5A623;
+      border-radius: 4px;
+      padding: 6px 8px;
+      color: #fff;
+      display: inline-block;
+      width: auto;
+      font-size: 14px;
+
+      & > svg {
+        position: absolute;
+        left: -52px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      &::before {
+        position: absolute;
+        left: -6px;
+        top: 50%;
+        transform: translateY(-50%);
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 6px 4px 0;
+        border-color: transparent #f5a423 transparent transparent;
+      }
+    }
+  }
+
+}

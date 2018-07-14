@@ -1,0 +1,30 @@
+.step {
+  margin-top: 50px;
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & > .step_item {
+    color: #0275D8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    & > svg {
+      display: block;
+    }
+    & > .step_item_line {
+      display: block;
+      width: 64px;
+      height: 2px;
+      border-bottom: 2px solid #BEE1FF;
+      margin-left: -1px;
+      margin-right: -2px;
+    }
+  }
+  
+  & > .step_line {
+
+  }
+  
+}
